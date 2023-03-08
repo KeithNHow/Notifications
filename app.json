@@ -1,0 +1,32 @@
+{
+  "id": "0bab83c4-e6ab-4227-92d3-989892163d09",
+  "name": "Notifications",
+  "publisher": "Keith How",
+  "version": "1.0.0.0",
+  "brief": "Notifications",
+  "description": "Notificatons",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./logo/KNH.jpg",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 52020,
+      "to": 52029
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
