@@ -12,6 +12,7 @@ pageextension 52020 KNH_CreditBalanceNotification extends "Sales Order"
     begin
         Customer.Get(Rec."Sell-to Customer No.");
         if Customer."Balance (LCY)" > Customer."Credit Limit (LCY)" then begin
+            Message('Found');
             CreditBalanceNotification.Message(BalanceMsg); //Create the notification
             CreditBalanceNotification.Scope := NotificationScope::LocalScope;
             CreditBalanceNotification.SetData('CustNumber', Customer."No."); //Add a data property for the customer number
