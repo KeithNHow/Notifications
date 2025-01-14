@@ -1,7 +1,7 @@
 /// <summary>
-/// PageExtension "KNH_CreditBalanceNotification" (ID 62040) extends Record Sales Order.
+/// PageExtension KNHCreditBalanceNotification (ID 62040) extends Record Sales Order.
 /// </summary>
-pageextension 52020 KNH_CreditBalanceNotification extends "Sales Order"
+pageextension 52020 KNHCreditBalanceNotification extends "Sales Order"
 {
     trigger OnOpenPage()
     var
@@ -16,7 +16,7 @@ pageextension 52020 KNH_CreditBalanceNotification extends "Sales Order"
             CreditBalanceNotification.Message(BalanceMsg); //Create the notification
             CreditBalanceNotification.Scope := NotificationScope::LocalScope;
             CreditBalanceNotification.SetData('CustNumber', Customer."No."); //Add a data property for the customer number
-            CreditBalanceNotification.AddAction(ChgCredLimitMsg, Codeunit::"KNH_ActionHandler", 'OpenCustomer');   //Add an action, call the ActionHandler codeunit
+            CreditBalanceNotification.AddAction(ChgCredLimitMsg, Codeunit::"KNHActionHandler", 'OpenCustomer');   //Add an action, call the ActionHandler codeunit
             CreditBalanceNotification.Send(); //Send the notification to the client.
         end;
     end;

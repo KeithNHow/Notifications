@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit "KNH_ActionHandler" (ID 62040).
+/// Codeunit "KNHActionHandler" (ID 62040).
 /// </summary>
-codeunit 52020 KNH_ActionHandler
+codeunit 52020 KNHActionHandler
 {
     /// <summary>
     /// OpenCustomer.
